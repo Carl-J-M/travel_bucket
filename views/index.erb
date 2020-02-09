@@ -1,0 +1,8 @@
+<h1>Hello World!</h1>
+
+<% for continent in @continents %>
+<tr>
+  <td><a href="/<%= continent.name %>"><%= continent.name %></a></td>
+  <td>|</td>
+</tr>
+<% end %>
