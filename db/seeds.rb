@@ -66,7 +66,23 @@ edinburgh = City.new({
   "visited" => true,
   "capital_city" => true
 })
+london = City.new({
+  "name" => "London",
+  "country_id" => united_kingdom.id,
+  "population" => 8900000,
+  "visited" => true,
+  "capital_city" => true
+  })
+shenzen = City.new({
+  "name" => "Shenzen",
+  "country_id" => china.id,
+  "population" => 12530000,
+  "visited" => false,
+  "capital_city" => false
+  })
 edinburgh.save()
+london.save()
+shenzen.save()
 
 # binding.pry
 # nil

@@ -23,8 +23,13 @@ get '/continents/:id' do
   erb ( :"continents/show" )
 end
 
-get '/continents/countries/:id' do
+get '/countries/:id' do
   @country = Country.find(params['id'].to_i)
   @cities = City.cities_by_country_id(params['id'].to_i)
   erb ( :"cities/index" )
+end
+
+get '/continents/:id/new' do
+  @continent = Continent.find(params['id'].to_i)
+  erb ( :"countries/new")
 end
