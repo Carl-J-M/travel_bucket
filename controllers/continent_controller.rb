@@ -9,9 +9,16 @@ require_relative( '../db/seeds.rb')
 also_reload( '../models/*' )
 
 
+# 
+# get '/continents' do
+#
+#   @continents = Continent.all()
+#   erb ( :"continents/index" )
+# end
 
-get '/Europe' do
 
-  @cities = Continent.all_cities()
-  erb ( :"continents/index" )
-end
+
+# get '/zombies' do
+#   @zombies = Zombie.all()
+#   erb ( :"zombies/index" )
+# end

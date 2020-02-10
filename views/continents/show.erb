@@ -1,0 +1,8 @@
+
+<h1><%= @continent.name %></h1>
+<a href="/continents/<%=@continent.id%>/new">New Country</a>
+<% for country in @countries %>
+<h2><a href="/continents/<%=@continent.id%>/<%country.id%>"><%= country.name %></a></h2>
+<h3>Population: <%= country.population %></h3>
+<h3>Capital City: <%= country.capital_city %></h3>
+<% end %>

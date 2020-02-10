@@ -23,10 +23,20 @@ class Continent
       @id = results.first()['id'].to_i
     end
 
-    def cities()
-      sql = "SELECT * FROM cities
+    def countries
+      sql = "SELECT *
+      FROM countries
       WHERE continent_id = $1"
       values = [@id]
+      results = SqlRunner.run(sql, values)
+      return results.map { |hash| Continent.new( hash ) }
+  
+    end
+
+    def self.find( id )
+      sql = "SELECT * FROM continents
+      WHERE id = $1"
+      values = [id]
       results = SqlRunner.run( sql, values )
       return Continent.new( results.first )
     end

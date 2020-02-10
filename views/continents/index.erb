@@ -1,6 +1,8 @@
-<% for city in @cities %>
+<h1>Select a Continent:</h1>
+
+<% for continent in @continents %>
 <tr>
-  <td><a href="/<%= city.name %>"><%= city.name %></a></td>
+  <td><a href="/continents/<%=continent.id%>"><%= continent.name %></a></td>
   <td>|</td>
 </tr>
 <% end %>

@@ -2,7 +2,7 @@ require_relative( '../db/sql_runner' )
 
 class Country
 
-  attr_reader :id, :name
+  attr_reader :id, :continent_id, :name, :population, :capital_city
 
     def initialize(options)
       @id = options['id'].to_i if options['id']
@@ -36,5 +36,17 @@ class Country
       SqlRunner.run( sql )
     end
 
+    def self.all()
+      sql = "SELECT * FROM countries"
+      results = SqlRunner.run( sql )
+      return results.map { |hash| Country.new( hash ) }
+    end
+
+    def self.countries_by_continent_id(id)
+      sql = "SELECT * FROM countries WHERE continent_id = $1"
+      values = [id]
+      results = SqlRunner.run(sql, values)
+      return results.map { |hash| Country.new( hash ) }
+    end
 
 end

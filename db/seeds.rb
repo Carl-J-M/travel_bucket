@@ -36,12 +36,28 @@ antarctica.save()
 
 united_kingdom = Country.new({
   "name" => "United Kingdom",
-  "population" => 6644000,
+  "population" => 66440000,
   "visited" => true,
   "capital_city" => "London",
   "continent_id" => europe.id
 })
- united_kingdom.save()
+italy = Country.new({
+  "name" => "Italy",
+  "population" => 60048000,
+  "visited" => true,
+  "capital_city" => "Rome",
+  "continent_id" => europe.id
+})
+china = Country.new({
+  "name" => "China",
+  "population" => 1386000000,
+  "visited" => false,
+  "capital_city" => "Beijing",
+  "continent_id" => asia.id
+})
+united_kingdom.save()
+italy.save()
+china.save()
 
 edinburgh = City.new({
   "name" => "Edinburgh",
@@ -50,7 +66,7 @@ edinburgh = City.new({
   "visited" => true,
   "capital_city" => true
 })
-  edinburgh.save()
+edinburgh.save()
 
-binding.pry
-nil
+# binding.pry
+# nil
