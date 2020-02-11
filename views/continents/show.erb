@@ -1,7 +1,7 @@
 
 <h1><%= @continent.name %></h1>
 <h1>Filter by Country:</h1>
-<a href="/countries/<%=@continent.id%>/new">New Country</a>
+
 <% for country in @countries %>
 <h2><a href="/countries/<%=country.id%>"><%= country.name %></a></h2>
 <h3>Population: <%= country.population %></h3>

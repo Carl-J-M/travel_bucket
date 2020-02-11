@@ -1,0 +1,24 @@
+<form action="/cities/new" method="post">
+<p>Create a new city:</p>
+<label for="continent-select">Country:</label>
+<select name="country_id" id="continent-select">
+  <% @countries.each do |country| %>
+    <option value=<%= country.id %>><%= country.name.capitalize %></option>
+  <% end %>
+</select>
+<label for="country-name-field">City name:</label>
+<input type="text" name="name" id="country-name-field"/>
+
+<label for="country-population-field">City population:</label>
+<input type="number" name="population" id="country-population-field"/>
+
+<label for="country-visited-checkbox">Visited?:</label>
+<input type="radio" name="visited" value="true">True</input>
+<input type="radio" name="visited" value="false">False</input>
+
+<label for="country-capital-city-field">Capital City:</label>
+<input type="radio" name="capital_city" value="true">True</input>
+<input type="radio" name="capital_city" value="false">False</input>
+
+<input type="submit" value="Create Country">
+</form>

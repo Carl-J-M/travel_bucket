@@ -26,18 +26,24 @@ get '/cities' do
 end
 
 get '/countries/new' do
-  @continent = Continent.find(params['id'].to_i)
-  erb ( :"countries/new")
+  @continents = Continent.all()
+  erb ( :"countries/new" )
 end
-get '/countries/:id/new' do
-  @continent = Continent.find(params['id'].to_i)
-  erb ( :"countries/new_by_cont_id")
+get '/cities/new' do
+  @countries = Country.all()
+  erb ( :"cities/new" )
 end
 #new country
 post '/countries/new' do # create
   country = Country.new( params )
   country.save()
   redirect to '/countries'
+  # redirect or confirmation page
+end
+post '/cities/new' do # create
+  city = City.new( params )
+  city.save()
+  redirect to '/cities'
   # redirect or confirmation page
 end
 get '/continents/:id' do
