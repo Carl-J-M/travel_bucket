@@ -1,0 +1,8 @@
+<h1>Select a Country:</h1>
+
+<% for country in @countries %>
+<tr>
+  <td><a href="/countries/<%=country.id%>"><%= country.name %></a></td>
+  <td>|</td>
+</tr>
+<% end %>
