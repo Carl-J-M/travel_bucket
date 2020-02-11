@@ -46,6 +46,10 @@ post '/cities/new' do # create
   redirect to '/cities'
   # redirect or confirmation page
 end
+get '/cities/delete' do
+  @cities = City.all()
+  erb ( :"cities/delete")
+end
 get '/continents/:id' do
   @continent = Continent.find(params['id'].to_i)
   @countries = Country.countries_by_continent_id(params['id'].to_i)

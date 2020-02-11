@@ -31,6 +31,12 @@ class Country
       results = SqlRunner.run(sql, values)
       @id = results.first()['id'].to_i
     end
+    def continent()
+      sql = "SELECT * FROM continents WHERE id = $1"
+      values = [@continent_id]
+      results = SqlRunner(sql, values)
+      return Continent.new(results.first)
+    end
 
     def self.find( id )
       sql = "SELECT * FROM countries

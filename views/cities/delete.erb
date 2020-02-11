@@ -1,0 +1,8 @@
+<form action="/cities/delete" method="post">
+<input type="submit" value="Delete City">
+<select name="country_id" id="continent-select">
+  <% @cities.each do |city| %>
+    <option value=<%= city.id %>><%= city.name.capitalize %></option>
+  <% end %>
+</select>
+</form>

@@ -60,10 +60,4 @@ class City
       results = SqlRunner.run( sql )
       return results.map { |hash| City.new( hash ) }
     end
-
-    def self.delete_by_id(id)
-        sql = "DELETE FROM cities WHERE id = $1"
-        values = [id]
-        SqlRunner.run(sql)
-      end
 end
