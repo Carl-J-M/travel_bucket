@@ -3,7 +3,7 @@
 <p>Create a new country:</p>
 <label for="continent-select">Continent:</label>
 <select name="continent_id" id="continent-select">
-  <% @continents.each do |continent| %>
+  <% @continent.each do |continent| %>
     <option value=<%= continent.id %>><%= continent.name.capitalize %></option>
   <% end %>
 </select>
@@ -23,9 +23,3 @@
 
 <input type="submit" value="Create Country">
 </form>
-
-<!-- name,
-continent_id,
-population,
-visited,
-capital_city -->

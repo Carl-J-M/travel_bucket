@@ -55,6 +55,11 @@ class City
       return results.map { |hash| City.new( hash ) }
     end
 
+    def self.all()
+      sql = "SELECT * FROM cities"
+      results = SqlRunner.run( sql )
+      return results.map { |hash| City.new( hash ) }
+    end
 
 
 end
