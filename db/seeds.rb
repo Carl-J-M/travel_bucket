@@ -69,11 +69,88 @@ germany = Country.new({
   "capital_city" => "Berlin",
   "continent_id" => europe.id
   })
+thailand = Country.new({
+  "name" => "Thailand",
+  "population" => 6837900,
+  "visited" => false,
+  "capital_city" => "Bangkok",
+  "continent_id" => asia.id
+  })
+usa = Country.new({
+  "name" => "USA",
+  "population" => 327048860,
+  "visited" => false,
+  "capital_city" => "Washington DC",
+  "continent_id" => north_america.id
+  })
+canada = Country.new({
+  "name" => "Canada",
+  "population" => 35048860,
+  "visited" => false,
+  "capital_city" => "Ottowa",
+  "continent_id" => north_america.id
+  })
+sweden = Country.new({
+  "name" => "Sweden",
+  "population" => 13958600,
+  "visited" => false,
+  "capital_city" => "Stockholm",
+  "continent_id" => europe.id
+  })
+afghanistan = Country.new({
+  "name" => "Afghanistan",
+  "population" => 43958200,
+  "visited" => false,
+  "capital_city" => "Kabul",
+  "continent_id" => asia.id
+  })
+australia = Country.new({
+  "name" => "Australia",
+  "population" => 2981209,
+  "visited" => false,
+  "capital_city" => "Canberra",
+  "continent_id" => oceania.id
+  })
+new_zealand = Country.new({
+  "name" => "New Zealand",
+  "population" => 2981209,
+  "visited" => false,
+  "capital_city" => "Canberra",
+  "continent_id" => oceania.id
+  })
+fiji = Country.new({
+  "name" => "Fiji",
+  "population" => 12809,
+  "visited" => false,
+  "capital_city" => "Suva",
+  "continent_id" => oceania.id
+  })
+polar_empire  = Country.new({
+  "name" => "The Emperor Penguin Empire",
+  "population" => 999999,
+  "visited" => false,
+  "capital_city" => "Unknown",
+  "continent_id" => antarctica.id
+  })
+
+
+
+
+
 united_kingdom.save()
 italy.save()
 china.save()
 france.save()
 germany.save()
+thailand.save()
+usa.save()
+canada.save()
+sweden.save()
+afghanistan.save()
+australia.save()
+new_zealand.save()
+fiji.save()
+polar_empire.save()
 
 edinburgh = City.new({
   "name" => "Edinburgh",
