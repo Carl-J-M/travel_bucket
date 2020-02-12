@@ -2,15 +2,25 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Travel Bucket App!</title>
+    <title>TRAVEL-DB</title>
+    <link href="/styles/layout_styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
   </head>
   <body>
-    <a href="/continents">All Continents</a>
-    <a href="/countries">All Countries</a>
-    <a href="/cities">All Cities</a>
-    <a href="/countries/new">New Country</a>
-    <a href="/cities/new">New City</a>
-    <a href="/cities/delete">Delete City</a>
+    <nav>
+      <ul>
+        <li id='blue'><a href="/continents">: All Continents :</a></li>
+        <li><a href="/countries">: All Countries :</a></li>
+        <li><a href="/cities">: All Cities :</a></li>
+        <li><a href="/countries/new">: New Country :</a></li>
+        <li><a href="/cities/new">: New City :</a></li>
+        <li><a href="/cities/delete">: Delete City :</a></li>
+      </ul>
+    </nav>
+    <h1 class="logo">TRAVEL-DB</h1>
+    <div id="background_overlay">
+    </div>
     <%= yield %>
   </body>
 </html>

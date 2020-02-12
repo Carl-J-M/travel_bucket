@@ -1,8 +1,9 @@
-<h1>Filter by Continent:</h1>
+
 
 <% for continent in @continents %>
-<tr>
-  <td><a href="/continents/<%=continent.id%>"><%= continent.name %></a></td>
-  <td>|</td>
-</tr>
+<div class="flex_cont_names">
+  <a class="continent_names" href="/continents/<%=continent.id%>"><%= continent.name %></a>
+
+</div>
+
 <% end %>

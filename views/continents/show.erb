@@ -1,9 +1,10 @@
+<link href="/styles/continent_show_styles.css" rel="stylesheet">
+<h1 class="flex_cont_names"><a href="/" class="continent_names"> << <%= @continent.name %></a></h1>
 
-<h1><%= @continent.name %></h1>
-<h1>Filter by Country:</h1>
-
-<% for country in @countries %>
-<h2><a href="/countries/<%=country.id%>"><%= country.name %></a></h2>
-<h3>Population: <%= country.population %></h3>
-<h3>Capital City: <%= country.capital_city %></h3>
-<% end %>
+<div class="country_container">
+  <% for country in @countries %>
+  <h2 class="text_styling_countries"><a class="nolinkstyle" href="/countries/<%=country.id%>"><%= country.name.upcase %></a></h2>
+  <h3 class="text_styling_countries">Population: <%= country.population %></h3>
+  <h3 class="text_styling_countries">Capital City: <%= country.capital_city %></h3>
+  <% end %>
+</div>

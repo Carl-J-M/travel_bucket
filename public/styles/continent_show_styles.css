@@ -1,0 +1,11 @@
+body {
+  background-image: url("../images/signpost.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  background-color: white;  /* fallback for old browsers */
+
+
+}

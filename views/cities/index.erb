@@ -1,10 +1,10 @@
 
 
+
 <% for city in @cities %>
-<tr>
+<div class="flex_cont_names">
+  <a class="continent_names"><%= city.name %></a>
 
-  <td><%= city.name %></td>
-  <p>Population:<%=city.population%></p>
+</div>
 
-</tr>
 <% end %>

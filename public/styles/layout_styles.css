@@ -1,0 +1,173 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+body {
+
+  position: absolute;
+
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/aerial.jpg");
+  background-size: auto;
+  background-attachment: fixed;
+
+}
+
+nav ul li {
+  list-style-type: none;
+  float: left;
+  margin: 20px;
+  padding: 5px;
+  /* border: solid white 3px; */
+  border-radius: 4px;
+  color: black;
+  background-image: url('../images/wood.jpg');
+  background-size: 100% 100%;
+  font-size: 1.4em;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Lacquer', sans-serif;
+}
+nav ul li a:hover {
+  transform: translateZ(360deg);
+  transition: all 0.3s ease-in-out 0s;
+  color: green;
+  animation-fill-mode: forwards;
+}
+.text_styling{
+  color: white;
+}
+nav {
+  width: 100vw;
+  min-height: 100px;
+  height: 8vh;
+  color: white;
+
+
+  /* opacity: 0.9; */
+  top: 0px;
+  left: 0px;
+
+}
+.flex_cont_names {
+  display: flex;
+  height: auto;
+  min-width: 350px;
+  max-width: 500px;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  /* background-image: url('../images/wood.jpg'); */
+  border-left: solid white 4px;
+  border-right: solid white 4px;
+  border-top: solid white 3px;
+  border-bottom: solid white 3px;
+  background-size: 100% 100%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.heading_styling {
+  color: white;
+
+}
+.continent_names {
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-family: 'Lacquer', sans-serif;
+  background-color: rgba(255, 255, 255, 0.3);
+
+  text-decoration: none;
+  float: left;
+}
+.flex_cont_names:hover > .continent_names {
+  transform: translateZ(360deg);
+  transition: all 0.3s ease-in-out 0s;
+  color: green;
+  animation-fill-mode: forwards;
+
+
+}
+.flex_cont_names:hover > {
+  /* border-left: solid darkred 4px;
+  border-right: solid darkred 4px;
+  border-top: solid white 3px;
+  border-bottom: solid white 3px; */
+
+}
+.continent_names:nth-child(2):hover {
+  color: yellow;
+}
+
+.logo {
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: 20px;
+  font-size: 4em;
+
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  margin-bottom: 50px;
+  border-top: solid white 4px;
+  border-bottom: solid white 4px;
+}
+.text_styling_countries {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 5px;
+  padding-top: 10px;
+  font-size: 2em;
+  font-family: 'Oxygen', sans-serif;
+  text-decoration: none;
+
+  width: 550px;
+}
+.nolinkstyle {
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+  font-size: 1em;
+}
+.nolinkstyle:hover {
+
+}
+.country_container {
+  display: flex;
+  width: 550px;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  margin-top: 20px;
+  border-radius: 15px;
+
+  border: solid white 4px;
+}
+#background_overlay {
+  width: 100vw;
+  height: 110vh;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.2;
+  z-index: -1;
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  /* clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0% 100%); */
+}

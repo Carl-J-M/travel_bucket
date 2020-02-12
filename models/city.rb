@@ -31,9 +31,9 @@ class City
       results = SqlRunner.run(sql, values)
       @id = results.first()['id'].to_i
     end
-    def delete()
+    def self.delete(id)
     sql="DELETE FROM cities WHERE id =$1"
-    values=[@id]
+    values=[id]
     SqlRunner.run(sql,values)
     end
     def self.delete_all()
