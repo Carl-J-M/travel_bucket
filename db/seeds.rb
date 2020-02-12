@@ -55,9 +55,25 @@ china = Country.new({
   "capital_city" => "Beijing",
   "continent_id" => asia.id
 })
+france = Country.new({
+  "name" => "France",
+  "population" => 66990000,
+  "visited" => true,
+  "capital_city" => "Paris",
+  "continent_id" => europe.id
+})
+germany = Country.new({
+  "name" => "Germany",
+  "population" => 82790000,
+  "visited" => false,
+  "capital_city" => "Berlin",
+  "continent_id" => europe.id
+  })
 united_kingdom.save()
 italy.save()
 china.save()
+france.save()
+germany.save()
 
 edinburgh = City.new({
   "name" => "Edinburgh",

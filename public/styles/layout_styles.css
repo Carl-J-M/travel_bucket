@@ -135,12 +135,35 @@ nav {
 }
 .nolinkstyle {
   text-decoration: none;
-  color: green;
+  color: black;
   font-weight: bold;
   font-size: 1em;
+  border: solid black 4px;
+  background-color: lightblue;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .nolinkstyle:hover {
+  color: green;
+}
 
+.form_style {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: 4em;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+}
+.margin_bad_practice{
+  margin-left: 38%;
+  color: green;
+}
+.margin_bad_practice2{
+  margin-left: 10%;
 }
 .country_container {
   display: flex;
@@ -157,7 +180,7 @@ nav {
 }
 #background_overlay {
   width: 100vw;
-  height: 110vh;
+  height: auto;
   overflow-y: hidden;
   position: absolute;
   top: 0px;

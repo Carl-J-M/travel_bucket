@@ -1,29 +1,31 @@
+<div class="flex_cont_names">
 
-<form action="/countries/new" method="post">
-<p>Create a new country:</p>
-<label for="continent-select">Continent:</label>
-<select name="continent_id" id="continent-select">
+
+<form action="/countries/new" method="post" >
+<label for="continent-select" class="form_style">Continent:</label>
+<select name="continent_id" id="continent-select" class="margin_bad_practice">
   <% @continents.each do |continent| %>
     <option value=<%= continent.id %>><%= continent.name.capitalize %></option>
+
   <% end %>
 </select>
 
-<label for="country-name-field">Country name:</label>
-<input type="text" name="name" id="country-name-field"/>
+<label for="country-name-field" class="form_style">Country name:</label>
+<input type="text" name="name" id="country-name-field" class="margin_bad_practice"/>
 
-<label for="country-population-field">Country population:</label>
-<input type="number" name="population" id="country-population-field"/>
+<label for="country-population-field" class="form_style">Country population:</label>
+<input type="number" name="population" id="country-population-field" class="margin_bad_practice"/>
 
-<label for="country-visited-checkbox">Visited?:</label>
-<input type="radio" name="visited" value="true">True</input>
-<input type="radio" name="visited" value="false">False</input>
+<label for="country-visited-checkbox" class="form_style">Visited?:</label>
+<input type="radio" name="visited" value="true" class="margin_bad_practice">True</input>
+<input type="radio" name="visited" value="false" class="margin_bad_practice2">False</input>
 
-<label for="country-capital-city-field">Capital City:</label>
-<input type="text" name="capital_city" id="country-capital-city-field"/>
+<label for="country-capital-city-field" class="form_style">Capital City:</label>
+<input type="text" name="capital_city" id="country-capital-city-field" class="margin_bad_practice"/>
 
-<input type="submit" value="Create Country">
+<input type="submit" value="Create Country" class="form_style margin_bad_practice" >
 </form>
-
+</div>
 <!-- name,
 continent_id,
 population,
